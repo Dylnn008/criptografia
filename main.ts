@@ -2,7 +2,7 @@ input.onButtonPressed(Button.A, function () {
     n1 += numero
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showNumber(n1 + n2)
+	
 })
 input.onButtonPressed(Button.B, function () {
     n2 += numero
@@ -14,8 +14,9 @@ numero = 1
 while (n1 == 0) {
     basic.showNumber(numero)
     numero += 1
-}
-while (n2 == 0) {
-    basic.showNumber(numero)
-    numero += 1
+    if (numero == 10) {
+        numero = 1
+        basic.showNumber(numero)
+        numero += 1
+    }
 }
