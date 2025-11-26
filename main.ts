@@ -4,6 +4,9 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.AB, function () {
     total = n1 + n2
     basic.showNumber(total)
+    n1 = 0
+    n2 = 0
+    numero = 1
 })
 input.onButtonPressed(Button.B, function () {
     n2 += numero
@@ -20,4 +23,3 @@ while (numero <= 10) {
         numero = 1
     }
 }
-
